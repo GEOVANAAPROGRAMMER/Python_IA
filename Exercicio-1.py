@@ -1,3 +1,6 @@
+import statistics as st
+
+
 def aritimetica(num):
     soma = 0
     i = 0
@@ -29,7 +32,18 @@ def geometrica(num):
     return (raiz)
 
 
-g = [4, 6, 9]
+g = [39, 38, 27, 22, 20, 17, 10, 10, 10, 10, 7, 7, 7, 7, 6]
 media_geometrica = geometrica(g)
 print("O resultado da média geométrica desses valores é :    {:.2f}".format(
     media_geometrica))
+
+
+def harmonica(num):
+    a = st.harmonic_mean(num)
+    return (a)
+
+
+h = [4, 6, 8]
+media_harmonica = harmonica(h)
+print("O resultado da média harmônica desses valores é :    {:.3f}".format(
+    media_harmonica))
