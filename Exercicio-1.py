@@ -13,13 +13,6 @@ def aritimetica(num):
     return (media_ari)
 
 
-a = [39, 38, 27, 22, 20, 17, 10, 10, 10, 10, 7, 7, 7, 7, 6]
-
-media_aritmetica = aritimetica(a)
-print("O resultado da média aritmética desses valores é :   {:.2f}".format(
-    media_aritmetica))
-
-
 def geometrica(num):
     mult = 1
     i = 0
@@ -32,18 +25,24 @@ def geometrica(num):
     return (raiz)
 
 
+def harmonica(num):
+    a = st.harmonic_mean(num)
+    return (a)
+
+
+a = [39, 38, 27, 22, 20, 17, 10, 10, 10, 10, 7, 7, 7, 7, 6]
+media_aritmetica = aritimetica(a)
+print("O resultado da média aritmética desses valores é :   {:.2f}".format(
+    media_aritmetica))
+
+
 g = [39, 38, 27, 22, 20, 17, 10, 10, 10, 10, 7, 7, 7, 7, 6]
 media_geometrica = geometrica(g)
 print("O resultado da média geométrica desses valores é :    {:.2f}".format(
     media_geometrica))
 
 
-def harmonica(num):
-    a = st.harmonic_mean(num)
-    return (a)
-
-
-h = [4, 6, 8]
+h = [39, 38, 27, 22, 20, 17, 10, 10, 10, 10, 7, 7, 7, 7, 6]
 media_harmonica = harmonica(h)
 print("O resultado da média harmônica desses valores é :    {:.3f}".format(
     media_harmonica))
